@@ -9,11 +9,11 @@ using Thought.vCards;
 
 namespace VcfReader
 {
-    public class VcfToCsvCommand : ConsoleCommand
+    public class DumpVcfCommand : ConsoleCommand
     {
-        public VcfToCsvCommand()
+        public DumpVcfCommand()
         {
-            this.IsCommand("vcf2csv", "Converts a VCF file to CSV format.");
+            this.IsCommand("dump", "Converts a VCF file to CSV format.");
             this.HasRequiredOption("i=", "Path of VCF file", v => Filepath = v);
         }
 
